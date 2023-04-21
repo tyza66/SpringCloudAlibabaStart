@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RestController
 @RequestMapping("/stock")
-public class Stock {
+public class StockController {
     @RequestMapping("/reduce")
     public String reduce(){
         System.out.println("扣减库存");

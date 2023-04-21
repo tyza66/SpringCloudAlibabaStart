@@ -1,4 +1,4 @@
-package com.tyza66.order;
+package com.tyza66.order.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RestController
 @RequestMapping("/order")
-public class controller {
+public class OrderController {
     @RequestMapping("/add")
     public String add() {
         System.out.println("下单成功!");
