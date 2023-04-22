@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/order/Order.iml" filepath="$PROJECT_DIR$/order/Order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-nacos/order-nacos.iml" filepath="$PROJECT_DIR$/order-nacos/order-nacos.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloudalibaba.iml" filepath="$PROJECT_DIR$/springcloudalibaba.iml" />
       <module fileurl="file://$PROJECT_DIR$/stock/stock.iml" filepath="$PROJECT_DIR$/stock/stock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stock-nacos/stock-nacos.iml" filepath="$PROJECT_DIR$/stock-nacos/stock-nacos.iml" />
     </modules>
   </component>
 </project>

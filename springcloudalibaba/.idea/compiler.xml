@@ -6,20 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="order-nacos" />
         <module name="stock" />
+        <module name="stock-nacos" />
         <module name="Order" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Order" target="1.8" />
-      <module name="springcloudalibaba" target="1.8" />
-      <module name="stock" target="1.8" />
+      <module name="Order" target="1.5" />
+      <module name="order-nacos" target="1.5" />
+      <module name="springcloudalibaba" target="1.5" />
+      <module name="stock" target="1.5" />
+      <module name="stock-nacos" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Order" options="-parameters" />
-      <module name="stock" options="-parameters" />
+      <module name="Order" options="" />
+      <module name="stock" options="" />
     </option>
   </component>
 </project>
