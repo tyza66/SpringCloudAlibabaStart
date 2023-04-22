@@ -15,3 +15,7 @@ spring:
         #服务分组 group 默认是default_group 用来做更细的分组
         #weight 权重
         #metadate: version=1 可以结合元数据做拓展
+
+stock-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule

@@ -16,9 +16,10 @@ import org.springframework.web.client.RestTemplate;
  * Github: https://github.com/tyza66
  **/
 @SpringBootApplication
-@RibbonClients(value = {
+//为了演示第二种 我给这个先注释掉了
+/*@RibbonClients(value = {
         @RibbonClient(name = "stock-service", configuration = RibbonRandomRule.class)}
-)
+)*/
 public class OrderApplication {
     public static void main(String[] args) {
         SpringApplication.run(OrderApplication.class, args);
