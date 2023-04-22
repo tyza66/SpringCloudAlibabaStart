@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="order-nacos" />
+        <module name="order-openfeign" />
         <module name="order-loadbalancer" />
         <module name="order-ribbon" />
         <module name="stock-nacos" />
@@ -18,6 +19,7 @@
       <module name="Order" target="1.5" />
       <module name="order-loadbalancer" target="1.5" />
       <module name="order-nacos" target="1.5" />
+      <module name="order-openfeign" target="1.5" />
       <module name="order-ribbon" target="1.5" />
       <module name="springcloudalibaba" target="1.5" />
       <module name="stock" target="1.5" />

@@ -9,6 +9,7 @@
         <module>stock-nacos</module>
         <module>order-ribbon</module>
         <module>order-loadbalancer</module>
+        <module>order-openfeign</module>
     </modules>
 
     <groupId>com.tyza66.springcloud</groupId>
