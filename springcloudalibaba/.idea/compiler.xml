@@ -9,12 +9,14 @@
         <module name="order-nacos" />
         <module name="stock" />
         <module name="stock-nacos" />
+        <module name="order-ribbon" />
         <module name="Order" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Order" target="1.5" />
       <module name="order-nacos" target="1.5" />
+      <module name="order-ribbon" target="1.5" />
       <module name="springcloudalibaba" target="1.5" />
       <module name="stock" target="1.5" />
       <module name="stock-nacos" target="1.5" />

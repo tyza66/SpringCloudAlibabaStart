@@ -1,0 +1,17 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: order-service  #nacos会把这个当做服务名称
+  cloud:
+    nacos:
+      service-addr: localhost:8848
+      discovery:
+        username: nacos
+        password: nacos
+        namespace: public
+        ephemeral: true #临时实例 如果是false就是临时实例 永久实例已经宕机了还会继续存在不会被注册中心遗忘
+        #服务名 service 默认是${spring.application.name}
+        #服务分组 group 默认是default_group 用来做更细的分组
+        #weight 权重
+        #metadate: version=1 可以结合元数据做拓展
