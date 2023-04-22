@@ -7,6 +7,6 @@ Spring Cloud Alibaba 入门
 - Step4：Nacos集群部署
 - Step5：Ribbon负载均衡策略（order-ribbon）
 - Step5：自定义Ribbin负载均衡策略
-- Step6：Spring Cloud官方提供的LoadBalancer
+- Step6：Spring Cloud官方提供的LoadBalancer（order-loadbalancer）
 
 By：tyza66(洮羱芝闇)

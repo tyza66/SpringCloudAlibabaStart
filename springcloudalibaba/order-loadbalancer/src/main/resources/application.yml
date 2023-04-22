@@ -1,5 +1,5 @@
 server:
-  port: 8083
+  port: 8090
 spring:
   application:
     name: order-service  #nacos会把这个当做服务名称
@@ -15,3 +15,6 @@ spring:
         #服务分组 group 默认是default_group 用来做更细的分组
         #weight 权重
         #metadate: version=1 可以结合元数据做拓展
+    loadbalancer:
+      ribbon:
+        enabled: false
