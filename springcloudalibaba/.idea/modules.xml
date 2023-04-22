@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/order/Order.iml" filepath="$PROJECT_DIR$/order/Order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-loadbalancer/order-loadbalancer.iml" filepath="$PROJECT_DIR$/order-loadbalancer/order-loadbalancer.iml" />
       <module fileurl="file://$PROJECT_DIR$/order-nacos/order-nacos.iml" filepath="$PROJECT_DIR$/order-nacos/order-nacos.iml" />
       <module fileurl="file://$PROJECT_DIR$/order-ribbon/order-ribbon.iml" filepath="$PROJECT_DIR$/order-ribbon/order-ribbon.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloudalibaba.iml" filepath="$PROJECT_DIR$/springcloudalibaba.iml" />

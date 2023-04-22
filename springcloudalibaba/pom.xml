@@ -8,6 +8,7 @@
         <module>order-nacos</module>
         <module>stock-nacos</module>
         <module>order-ribbon</module>
+        <module>order-loadbalancer</module>
     </modules>
 
     <groupId>com.tyza66.springcloud</groupId>
