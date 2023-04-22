@@ -8,6 +8,6 @@ Spring Cloud Alibaba 入门
 - Step5：Ribbon负载均衡策略（order-ribbon）
 - Step5：自定义Ribbin负载均衡策略
 - Step6：Spring Cloud官方提供的LoadBalancer（order-loadbalancer）
-- Step7：微服务调用组件Feign
+- Step7：微服务调用组件Feign/OpenFeign
 
 By：tyza66(洮羱芝闇)
