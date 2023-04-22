@@ -1,8 +1,12 @@
 server:
-  port: 8081
+  port: 8083
 spring:
   application:
-    name: order-service
+    name: order-service  #nacos会把这个当做服务名称
   cloud:
     nacos:
-      addres:
+      service-addr: localhost:8848
+      discovery:
+        username: nacos
+        password: nacos
+        namespace: public

@@ -3,6 +3,7 @@ package com.tyza66.order;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
@@ -19,6 +20,8 @@ public class OrderApplication {
 
     //懒得往配置文件里面写 直接使用bean
     @Bean
+    //负载均衡器 默认是轮询
+    @LoadBalanced
     public RestTemplate restTemplate(RestTemplateBuilder builder) {
         RestTemplate build = builder.build();
         return build;

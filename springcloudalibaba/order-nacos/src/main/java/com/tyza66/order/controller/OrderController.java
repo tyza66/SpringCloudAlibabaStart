@@ -19,9 +19,8 @@ public class OrderController {
     @RequestMapping("/add")
     public String add() {
         System.out.println("下单成功!");
-        //远程请求调用 参数:远程调用的地址,相应的数据类型,参数类型
-        String forObject = restTemplate.getForObject("http://localhost:8082/stock/reduce", String.class);
-        System.out.println("接收到:"+forObject);
-        return "Hello,World!";
+        String forObject = restTemplate.getForObject("http://stock-service/stock/reduce", String.class);
+        System.out.println("接收到:" + forObject);
+        return "Hello,World!" + forObject;
     }
 }
