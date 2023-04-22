@@ -18,4 +18,11 @@ spring:
 
 stock-service:
   ribbon:
-    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule
+    NFLoadBalancerRuleClassName: com.tyza66.order.CustomRule
+
+bibbon:
+  eager-load:
+  # 开启ribbon饥饿加载
+  enabled: true
+  # 配置服务使用ribbon饥饿加载,多个使用逗号分隔
+  client: mall-order
