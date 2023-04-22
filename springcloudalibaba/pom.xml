@@ -58,7 +58,7 @@
             </dependency>
             <!--Spring Cloud 的版本管理-->
             <dependency>
-                <groupId>org.springframework.boot</groupId>
+                <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring.cloud.version}</version>
                 <type>pom</type>
