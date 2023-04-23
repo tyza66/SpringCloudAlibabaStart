@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
  * Date: 2023/04/23 9:22
  * Github: https://github.com/tyza66
  **/
-@Configuration //如果加了@Configuration 就是全局配置 作用于所有的服务方
+//@Configuration //如果加了@Configuration 就是全局配置 作用于所有的服务方
 public class FeignConfig {
     @Bean
     public Logger.Level feignLoggerLevel(){
