@@ -10,5 +10,6 @@
 - Step6：Spring Cloud官方提供的LoadBalancer（order-loadbalancer）
 - Step7：微服务调用组件Feign/OpenFeign（order-openfeign）
 - Step8：OpenFeign中的自定义配置（order-openfeign，product-nacos）
+- Step9：Nacos配置中心
 
 By：tyza66(洮羱芝闇)
