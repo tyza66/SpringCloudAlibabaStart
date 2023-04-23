@@ -1,5 +1,5 @@
 # SpringCloudAlibabaStart
-Spring Cloud Alibaba 入门  
+### Spring Cloud Alibaba 入门  
 
 - Step1：手写分布式请求处理调用实现消费同时减少库存（order，stock）
 - Step2：Spring Cloud Alibaba环境搭建
@@ -8,6 +8,7 @@ Spring Cloud Alibaba 入门
 - Step5：Ribbon负载均衡策略（order-ribbon）
 - Step5：自定义Ribbin负载均衡策略
 - Step6：Spring Cloud官方提供的LoadBalancer（order-loadbalancer）
-- Step7：微服务调用组件Feign/OpenFeign
+- Step7：微服务调用组件Feign/OpenFeign（order-openfeign）
+- Step8：OpenFeign中的自定义配置（order-openfeign，product-nacos）
 
 By：tyza66(洮羱芝闇)
