@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: com.tyza66
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      config:
+        namespace: public

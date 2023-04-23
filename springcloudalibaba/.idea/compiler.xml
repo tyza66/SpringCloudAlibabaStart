@@ -12,11 +12,13 @@
         <module name="order-ribbon" />
         <module name="stock-nacos" />
         <module name="stock" />
+        <module name="config-nacos" />
         <module name="Order" />
         <module name="product-nacos" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="config-nacos" target="1.5" />
       <module name="Order" target="1.5" />
       <module name="order-loadbalancer" target="1.5" />
       <module name="order-nacos" target="1.5" />

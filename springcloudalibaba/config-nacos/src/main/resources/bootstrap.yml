@@ -1,0 +1,10 @@
+spring:
+  application:
+    #会根据服务名直接拉取dataid同名的配置文件 如果服务名和dataid不一致就需要手动配置dataid
+    #获得的配置文件内容是动态随着注册中心中配置而变化的 而且是立刻感知
+    name: com.tyza66
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      config:
+        namespace: public
