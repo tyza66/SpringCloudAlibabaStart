@@ -12,10 +12,12 @@ import org.slf4j.LoggerFactory;
  **/
 public class CustomFeignInterceptor implements RequestInterceptor {
     Logger logger = LoggerFactory.getLogger(this.getClass());
+
     public void apply(RequestTemplate requestTemplate) {
         //为当前请求头设置参数
-        requestTemplate.header("xxx","xxx");
+        requestTemplate.header("xxx", "xxx");
         //为当前请求头修改参数
+        requestTemplate.query("xxx");
         logger.info("feign拦截器");
     }
 }
