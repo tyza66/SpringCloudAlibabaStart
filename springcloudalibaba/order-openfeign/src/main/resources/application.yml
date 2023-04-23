@@ -15,3 +15,9 @@ spring:
         #服务分组 group 默认是default_group 用来做更细的分组
         #weight 权重
         #metadate: version=1 可以结合元数据做拓展
+
+#spring默认的日志级别是info级别 我们的openfeign的日志是debug级别
+
+logging:
+  level:
+    com.tyza66.order.feign: debug

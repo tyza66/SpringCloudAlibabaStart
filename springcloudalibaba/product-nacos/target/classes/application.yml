@@ -1,0 +1,12 @@
+server:
+  port: 8095
+spring:
+  application:
+    name: product-service  #nacos会把这个当做服务名称
+  cloud:
+    nacos:
+      service-addr: localhost:8848
+      discovery:
+        username: nacos
+        password: nacos
+        namespace: public
