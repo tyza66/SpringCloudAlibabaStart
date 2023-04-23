@@ -16,8 +16,9 @@ public class CustomFeignInterceptor implements RequestInterceptor {
     public void apply(RequestTemplate requestTemplate) {
         //为当前请求头设置参数
         requestTemplate.header("xxx", "xxx");
-        //为当前请求头修改参数
-        requestTemplate.query("xxx");
+        //修改当前请求头的参数
+        requestTemplate.query("id","111");
+        requestTemplate.uri("/96");
         logger.info("feign拦截器");
     }
 }
