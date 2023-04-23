@@ -29,4 +29,5 @@ feign:
       stock-service:
         LoggerLevel: BASIC
         #contract：feign。Contract。Default 使用这个指定使用feign默认的契约 也就是原生的feign注解
-
+        connectTimeout: 5000  #连接超时时间 默认2s
+        readTimeout: 10000 #请求超时时间 默认5s
