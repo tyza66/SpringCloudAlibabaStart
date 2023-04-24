@@ -20,6 +20,7 @@ spring:
             #group: xxx 默认是default_group
           - data-id: com.tyza66.common2.properties
             refresh: true
+        #这个的优先级比上面的大点 但是还是没有默认的和profile里面的大
         extension-configs[0]:
           data-id: com.tyza66.common3.properties
           refresh: true
