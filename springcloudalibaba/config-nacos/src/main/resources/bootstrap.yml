@@ -11,6 +11,7 @@ spring:
       config:
         namespace: public
         #file-extensions: yaml 一旦修改成了非properties就要进行这个设置
+        #refresh-enabled:false nacos客户端将无法感知配置的变化
 
 #默认情况下,nacos客户端不做任何配置的情况下读取的是properties的文件拓展名
 #文件改变了就需要配置了
