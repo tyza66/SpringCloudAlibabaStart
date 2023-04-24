@@ -13,7 +13,17 @@ spring:
         file-extension: yaml #一旦修改成了非properties就要进行这个设置
         #refresh-enabled:false nacos客户端将无法感知配置的变化
         #group: xxx  这个和命名空间组合能形成更细致的划分范围
-
+        # 他的优先级低于默认的和profile里面的 如果这个集合里面有多个配置文件 那么后面的优先 相当于覆盖前面的
+        shared-configs:
+          - data-id: com.tyza66.common.properties
+            refresh: true
+            #group: xxx 默认是default_group
+          - data-id: com.tyza66.common2.properties
+            refresh: true
+        #这个的优先级比上面的大点 但是还是没有默认的和profile里面的大
+        extension-configs[0]:
+          data-id: com.tyza66.common3.properties
+          refresh: true
 #默认情况下,nacos客户端不做任何配置的情况下读取的是properties的文件拓展名
 #文件改变了就需要配置了
 #Spring Cloud Alibaba Nacos Config 从 0.2.1 版本后，可支持自定义 Data Id 的配置

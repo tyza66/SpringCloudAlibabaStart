@@ -17,6 +17,7 @@ public class ConfigApplication {
         ConfigurableApplicationContext applicationContext = SpringApplication.run(ConfigApplication.class, args);
         String userName = applicationContext.getEnvironment().getProperty("user.name");
         String userAge = applicationContext.getEnvironment().getProperty("user.age");
-        System.err.println("user name: " + userName + "; age: " + userAge);
+        String userConfig = applicationContext.getEnvironment().getProperty("user.config");
+        System.err.println("user name: " + userName + "; age: " + userAge + "; config:" + userConfig);
     }
 }
