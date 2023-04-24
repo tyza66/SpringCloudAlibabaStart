@@ -1,2 +1,9 @@
 server:
   port: 8111
+spring:
+  profiles:
+    active: dev
+#在配置中心:可以通过profile进行设置
+#只有默认的配置文件才结合profile进行使用
+#对应的Dataid:${spring.application.name}-${profile}.${file-extension:properties}
+# 注意后面有文件拓展名 除了bootstrap中的默认配置文件 其他配置文件必须写上后缀 而且必须跟随默认的格式来

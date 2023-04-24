@@ -7,3 +7,4 @@ spring:
 #只有默认的配置文件才结合profile进行使用
 #对应的Dataid:${spring.application.name}-${profile}.${file-extension:properties}
 # 注意后面有文件拓展名 除了bootstrap中的默认配置文件 其他配置文件必须写上后缀 而且必须跟随默认的格式来
+#配置文件的优先级 profile配置文件优先级大于默认的 优先级大的会覆盖优先级小的 并且会出现互补
