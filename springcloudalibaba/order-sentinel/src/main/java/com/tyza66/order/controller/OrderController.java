@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * Author: tyza66
  * Date: 2023/04/21 22:01
@@ -30,5 +32,21 @@ public class OrderController {
 
     public String blockAdd(BlockException e) {
         return "流控";
+    }
+
+    @RequestMapping("/testThread")
+    @SentinelResource(value = "testThread", blockHandler = "blockTestThread")
+    public String testThread() throws InterruptedException {
+        TimeUnit.SECONDS.sleep(5);
+        return "测试成功";
+    }
+
+    public String blockTestThread(BlockException e) {
+        return "流控1";
+    }
+
+    @RequestMapping("/testAll")
+    public String testAll()  {
+        return "测试全局注解的controller自己执行成功";
     }
 }

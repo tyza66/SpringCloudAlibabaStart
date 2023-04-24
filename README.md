@@ -12,5 +12,6 @@
 - Step8：OpenFeign中的自定义配置（order-openfeign，product-nacos）
 - Step9：Nacos配置中心（config-nacos）
 - Step10：Sentinel服务高可用、容错机制（了解代码，使用控制台）（order-sentinel）
+- Step11：Sentinel的各种配置（order-sentinel）
 
 By：tyza66(洮羱芝闇)
