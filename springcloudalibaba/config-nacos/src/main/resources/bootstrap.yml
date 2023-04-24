@@ -16,3 +16,5 @@ spring:
 
 #默认情况下,nacos客户端不做任何配置的情况下读取的是properties的文件拓展名
 #文件改变了就需要配置了
+#Spring Cloud Alibaba Nacos Config 从 0.2.1 版本后，可支持自定义 Data Id 的配置
+#有两种办法自定义dataid 这两种方法中只有优先级有区别
