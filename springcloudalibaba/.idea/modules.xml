@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/order-nacos/order-nacos.iml" filepath="$PROJECT_DIR$/order-nacos/order-nacos.iml" />
       <module fileurl="file://$PROJECT_DIR$/order-openfeign/order-openfeign.iml" filepath="$PROJECT_DIR$/order-openfeign/order-openfeign.iml" />
       <module fileurl="file://$PROJECT_DIR$/order-ribbon/order-ribbon.iml" filepath="$PROJECT_DIR$/order-ribbon/order-ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-sentinel/order-sentinel.iml" filepath="$PROJECT_DIR$/order-sentinel/order-sentinel.iml" />
       <module fileurl="file://$PROJECT_DIR$/product-nacos/product-nacos.iml" filepath="$PROJECT_DIR$/product-nacos/product-nacos.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloudalibaba.iml" filepath="$PROJECT_DIR$/springcloudalibaba.iml" />
       <module fileurl="file://$PROJECT_DIR$/stock/stock.iml" filepath="$PROJECT_DIR$/stock/stock.iml" />
