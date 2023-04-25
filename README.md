@@ -16,6 +16,6 @@
 - Step12：Sentinel整合OpenFeign（order-openfeign-sentinel，stock-nacos）
 - Step13：Sentinel热点参数流控（order-sentinel）
 - Step13：Sentinel持久化（order-sentinel）
-- Step14：分布式事务Seata（二阶段提交协议prepare，commit）（AT模式）
+- Step14：分布式事务Seata（二阶段提交协议prepare，commit）（AT模式，配置中心和注册中心选择nacos）
 
 By：tyza66(洮羱芝闇)
