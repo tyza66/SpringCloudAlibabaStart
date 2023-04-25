@@ -65,12 +65,12 @@ public class OrderController {
 
     //用于测试热点流控
     @RequestMapping("/get/{id}")
-    @SentinelResource(value = "getById", blockHandler = "")
+    @SentinelResource(value = "getById", blockHandler = "getByIdHotHandler")
     public String getById(@PathVariable("id") String id){
         return "正常访问";
     }
 
-    public String getByIdHotHandler(){
+    public String getByIdHotHandler(@PathVariable("id") String id,BlockException e){
         return "热点";
     }
 }
