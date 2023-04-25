@@ -35,7 +35,7 @@ public class OrderController {
     }
 
     @RequestMapping("/testThread")
-    @SentinelResource(value = "testThread", blockHandler = "blockTestThread")
+    //@SentinelResource(value = "testThread", blockHandler = "blockTestThread")
     public String testThread() throws InterruptedException {
         TimeUnit.SECONDS.sleep(5);
         return "测试成功";
@@ -48,5 +48,17 @@ public class OrderController {
     @RequestMapping("/testAll")
     public String testAll()  {
         return "测试全局注解的controller自己执行成功";
+    }
+
+
+    @RequestMapping("/err")
+    @SentinelResource(value = "err", blockHandler = "errBlock")
+    public String err(){
+        int i = 1/0;
+        return "giao";
+    }
+
+    public String errBlock(BlockException e){
+        return "qqq";
     }
 }

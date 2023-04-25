@@ -7,3 +7,4 @@ spring:
     sentinel:
       transport:
         dashboard: 127.0.0.1:9090
+      #web-context-unify: false 如果使用了链路流控 那么就要配置这个才会生效 因为默认将调用链路收敛了

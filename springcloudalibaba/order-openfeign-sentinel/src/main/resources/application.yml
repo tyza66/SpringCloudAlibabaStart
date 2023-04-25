@@ -1,0 +1,36 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: order-service  #nacos会把这个当做服务名称
+  cloud:
+    nacos:
+      service-addr: localhost:8848
+      discovery:
+        username: nacos
+        password: nacos
+        namespace: public
+        ephemeral: true #临时实例 如果是false就是临时实例 永久实例已经宕机了还会继续存在不会被注册中心遗忘
+        #服务名 service 默认是${spring.application.name}
+        #服务分组 group 默认是default_group 用来做更细的分组
+        #weight 权重
+        #metadate: version=1 可以结合元数据做拓展
+
+#spring默认的日志级别是info级别 我们的openfeign的日志是debug级别
+
+logging:
+  level:
+    com.tyza66.order.feign: debug
+
+#除了更改FeignClient注解的参数 我们还可以用修改配置文件的方式
+feign:
+  client:
+    config:
+      stock-service:
+        LoggerLevel: BASIC
+        #contract：feign。Contract。Default 使用这个指定使用feign默认的契约 也就是原生的feign注解
+        connectTimeout: 5000  #连接超时时间 默认2s
+        readTimeout: 10000 #请求超时时间 默认5s
+      product-service:
+        requestInterceptors[0]:
+          com.tyza66.order.interceptor.feign.CustomFeignInterceptor

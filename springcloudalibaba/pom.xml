@@ -13,6 +13,7 @@
         <module>product-nacos</module>
         <module>config-nacos</module>
         <module>order-sentinel</module>
+        <module>order-openfeign-sentinel</module>
     </modules>
 
     <groupId>com.tyza66.springcloud</groupId>
