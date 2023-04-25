@@ -15,6 +15,6 @@
 - Step11：Sentinel的各种配置（order-sentinel）
 - Step12：Sentinel整合OpenFeign（order-openfeign-sentinel，stock-nacos）
 - Step13：Sentinel热点参数流控（order-sentinel）
-- Step13：Sentinel持久化
+- Step13：Sentinel持久化（order-sentinel）
 
 By：tyza66(洮羱芝闇)
