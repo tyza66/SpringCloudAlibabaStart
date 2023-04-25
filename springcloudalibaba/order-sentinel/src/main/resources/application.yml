@@ -8,3 +8,11 @@ spring:
       transport:
         dashboard: 127.0.0.1:9090
       #web-context-unify: false 如果使用了链路流控 那么就要配置这个才会生效 因为默认将调用链路收敛了
+      datasource:
+        flow-rule: #可以自定义
+          server-addr: localhost:8848
+          username: nacos
+          password: nacos
+          dataId: order-sentinel-flow-rules
+          RuleType: flow
+
