@@ -22,3 +22,7 @@ logging:
   level:
     com.tyza66.order.feign: debug
 
+feign:
+  sentinel:
+    #openfeign整合
+    enabled: true

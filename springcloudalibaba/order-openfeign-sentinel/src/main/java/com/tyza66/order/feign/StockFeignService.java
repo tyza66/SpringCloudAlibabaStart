@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 //这里的name制定的是需要调用的rest接口属于哪个服务
     //path指的是我们要调用的rest接口所在的RequestMapping 如果没有制定就不用去写
-@FeignClient(name = "stock-service",path = "/stock")
+@FeignClient(name = "stock-service",path = "/stock",fallback = StockFeignServiceFallback.class)
 public interface StockFeignService {
     //声明需要调用的接口对应的方法
     @RequestMapping("/reduce")
