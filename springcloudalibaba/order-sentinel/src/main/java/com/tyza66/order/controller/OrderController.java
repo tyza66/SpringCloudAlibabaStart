@@ -38,7 +38,7 @@ public class OrderController {
     @RequestMapping("/testThread")
     //@SentinelResource(value = "testThread", blockHandler = "blockTestThread")
     public String testThread() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(5);
+        //TimeUnit.SECONDS.sleep(5);
         return "测试成功";
     }
 

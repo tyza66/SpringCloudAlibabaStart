@@ -28,6 +28,7 @@
             <version>1.18.24</version>
             <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>com.alibaba.csp</groupId>
             <artifactId>sentinel-datasource-nacos</artifactId>

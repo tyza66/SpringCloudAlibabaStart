@@ -16,5 +16,6 @@
 - Step12：Sentinel整合OpenFeign（order-openfeign-sentinel，stock-nacos）
 - Step13：Sentinel热点参数流控（order-sentinel）
 - Step13：Sentinel持久化（order-sentinel）
+- Step14：分布式事务Seata
 
 By：tyza66(洮羱芝闇)
