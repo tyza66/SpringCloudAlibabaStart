@@ -16,6 +16,7 @@
         <module name="stock" />
         <module name="config-nacos" />
         <module name="Order" />
+        <module name="order-openfeign-sentinel" />
         <module name="product-nacos" />
       </profile>
     </annotationProcessing>
@@ -25,6 +26,7 @@
       <module name="order-loadbalancer" target="1.5" />
       <module name="order-nacos" target="1.5" />
       <module name="order-openfeign" target="1.5" />
+      <module name="order-openfeign-sentinel" target="1.5" />
       <module name="order-ribbon" target="1.5" />
       <module name="order-sentinel" target="1.5" />
       <module name="product-nacos" target="1.5" />

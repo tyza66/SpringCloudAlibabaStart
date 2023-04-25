@@ -19,4 +19,7 @@ public interface StockFeignService {
     //声明需要调用的接口对应的方法
     @RequestMapping("/reduce")
     String reduce();
+
+    @RequestMapping("/reduce2")
+    String reduce2();
 }
