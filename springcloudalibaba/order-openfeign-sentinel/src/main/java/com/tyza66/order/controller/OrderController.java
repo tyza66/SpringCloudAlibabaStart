@@ -2,6 +2,7 @@ package com.tyza66.order.controller;
 
 import com.tyza66.order.feign.StockFeignService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/order")
 public class OrderController {
+    //选择原来的
     @Autowired
     StockFeignService stockFeignService;
 

@@ -3,6 +3,7 @@ package com.tyza66.order.controller;
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
@@ -60,5 +61,16 @@ public class OrderController {
 
     public String errBlock(BlockException e){
         return "qqq";
+    }
+
+    //用于测试热点流控
+    @RequestMapping("/get/{id}")
+    @SentinelResource(value = "getById", blockHandler = "")
+    public String getById(@PathVariable("id") String id){
+        return "正常访问";
+    }
+
+    public String getByIdHotHandler(){
+        return "热点";
     }
 }

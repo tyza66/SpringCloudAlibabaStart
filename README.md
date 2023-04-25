@@ -14,5 +14,6 @@
 - Step10：Sentinel服务高可用、容错机制（了解代码，使用控制台）（order-sentinel）
 - Step11：Sentinel的各种配置（order-sentinel）
 - Step12：Sentinel整合OpenFeign（order-openfeign-sentinel，stock-nacos）
+- Step13：热点参数流控（order-sentinel）
 
 By：tyza66(洮羱芝闇)
