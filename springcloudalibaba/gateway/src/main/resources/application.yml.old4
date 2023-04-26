@@ -15,9 +15,6 @@ spring:
             #-Header=X-Request-Id,\d+
             #-Method=GET
             #Query=name,tyza66|tyza77
-            - CheckAuth=tyza66
-          filters:
-            - AddRequestHeader=X-Request-color,red
 
     nacos:
       discovery:

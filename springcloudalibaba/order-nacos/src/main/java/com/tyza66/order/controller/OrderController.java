@@ -1,6 +1,7 @@
 package com.tyza66.order.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
@@ -22,5 +23,10 @@ public class OrderController {
         String forObject = restTemplate.getForObject("http://stock-service/stock/reduce", String.class);
         System.out.println("接收到:" + forObject);
         return "Hello,World!" + forObject;
+    }
+
+    @RequestMapping("/color")
+    public String color(@RequestHeader("X-Request-color") String color) {
+        return color;
     }
 }

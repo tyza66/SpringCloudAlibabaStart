@@ -25,19 +25,31 @@ public class CheckAuthRoutePredicateFactory extends AbstractRoutePredicateFactor
     }
 
     public List<String> shortcutFieldOrder() {
-        return Arrays.asList("");
+        return Arrays.asList("name");
     }
 
     public Predicate<ServerWebExchange> apply(CheckAuthRoutePredicateFactory.Config config) {
         return new GatewayPredicate() {
             public boolean test(ServerWebExchange exchange) {
+                if(config.getName().equals("tyza66")){
+                    return true;
+                }
                 return false;
             }
         };
     }
 
+    //用于接受配置文件中断言的信息
     @Validated
     public static class Config {
+        private String name;
 
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getName() {
+            return name;
+        }
     }
 }
