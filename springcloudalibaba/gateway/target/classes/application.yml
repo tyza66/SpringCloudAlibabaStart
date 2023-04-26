@@ -17,7 +17,10 @@ spring:
             #Query=name,tyza66|tyza77
             - CheckAuth=tyza66
           filters:
-            - AddRequestHeader=X-Request-color,red
+            #- AddRequestHeader=X-Request-color,red
+            #- PrefixPath=/mall-order  #添加前缀对应微服务需要配置context-path
+            #- RedirectTo=302,https://www.baidu.com/
+            - SetStatus=404
 
     nacos:
       discovery:

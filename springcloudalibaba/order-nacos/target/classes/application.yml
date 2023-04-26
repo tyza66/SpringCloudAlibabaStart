@@ -1,5 +1,7 @@
 server:
   port: 8083
+  servlet:
+    context-path: /mall-order
 spring:
   application:
     name: order-service  #nacos会把这个当做服务名称
