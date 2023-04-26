@@ -1,4 +1,4 @@
-package com.tyza66.seata1.feign;
+package com.tyza66.seata2.feign;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
