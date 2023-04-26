@@ -7,19 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="seata-t1" />
         <module name="order-nacos" />
         <module name="order-sentinel" />
-        <module name="stock" />
-        <module name="order-ribbon" />
         <module name="order-openfeign" />
+        <module name="order-loadbalancer" />
+        <module name="order-ribbon" />
         <module name="seata-t2" />
+        <module name="seata-t1" />
+        <module name="order-openfeign-sentinel" />
+        <module name="stock" />
+        <module name="config-nacos" />
+        <module name="Order" />
         <module name="stock-nacos" />
         <module name="product-nacos" />
-        <module name="order-loadbalancer" />
-        <module name="Order" />
-        <module name="order-openfeign-sentinel" />
-        <module name="config-nacos" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
