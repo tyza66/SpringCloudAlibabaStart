@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/seata_n2?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8
+    username: root
+    password: 123456
+  application:
+    name: seata-n2
+  cloud:
+    nacos:
+      service-addr: localhost:8848
+      discovery:
+        username: nacos
+        password: nacos
+        namespace: public
+        ephemeral: true
+    alibaba:
+      seata:
+
+server:
+  port: 8062

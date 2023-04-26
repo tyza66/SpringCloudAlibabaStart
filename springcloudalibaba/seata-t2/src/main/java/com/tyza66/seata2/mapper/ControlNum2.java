@@ -9,6 +9,6 @@ import org.apache.ibatis.annotations.Update;
  **/
 public interface ControlNum2 {
 
-    @Update("UPDATE Num2 SET num = num + 1 WHERE id = #{id}")
+    @Update("UPDATE Num2 SET num = num - 1 WHERE id = #{id}")
     int noPass(int id);
 }
