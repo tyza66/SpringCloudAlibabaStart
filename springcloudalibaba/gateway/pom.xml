@@ -11,5 +11,11 @@
 
     <artifactId>gateway</artifactId>
 
-
+    <dependencies>
+        <!--gateway的依赖springcloud开发-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+    </dependencies>
 </project>
