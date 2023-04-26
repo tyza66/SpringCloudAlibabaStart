@@ -16,6 +16,7 @@
         <module>order-openfeign-sentinel</module>
         <module>seata-t1</module>
         <module>seata-t2</module>
+        <module>gateway</module>
     </modules>
 
     <groupId>com.tyza66.springcloud</groupId>
