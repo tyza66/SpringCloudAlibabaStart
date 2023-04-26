@@ -7,17 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="seata-t1" />
         <module name="order-nacos" />
         <module name="order-sentinel" />
-        <module name="order-openfeign" />
-        <module name="order-loadbalancer" />
-        <module name="order-ribbon" />
-        <module name="stock-nacos" />
         <module name="stock" />
-        <module name="config-nacos" />
+        <module name="order-ribbon" />
+        <module name="order-openfeign" />
+        <module name="stock-nacos" />
+        <module name="product-nacos" />
+        <module name="order-loadbalancer" />
         <module name="Order" />
         <module name="order-openfeign-sentinel" />
-        <module name="product-nacos" />
+        <module name="config-nacos" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -30,6 +31,7 @@
       <module name="order-ribbon" target="1.5" />
       <module name="order-sentinel" target="1.5" />
       <module name="product-nacos" target="1.5" />
+      <module name="seata-t1" target="1.5" />
       <module name="springcloudalibaba" target="1.5" />
       <module name="stock" target="1.5" />
       <module name="stock-nacos" target="1.5" />

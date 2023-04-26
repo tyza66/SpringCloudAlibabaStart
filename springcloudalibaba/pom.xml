@@ -14,6 +14,7 @@
         <module>config-nacos</module>
         <module>order-sentinel</module>
         <module>order-openfeign-sentinel</module>
+        <module>seata-t1</module>
     </modules>
 
     <groupId>com.tyza66.springcloud</groupId>
