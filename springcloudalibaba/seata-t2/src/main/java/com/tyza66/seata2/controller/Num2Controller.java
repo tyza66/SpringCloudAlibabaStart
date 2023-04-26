@@ -20,6 +20,7 @@ public class Num2Controller {
     @RequestMapping("/go")
     public String go(){
         controlNum2.noPass(1);
+        //int i = 1/0;
         return "go";
     }
 }
