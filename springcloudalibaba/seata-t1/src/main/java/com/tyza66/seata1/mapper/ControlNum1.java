@@ -1,4 +1,4 @@
-package com.tyza66.seata2.mapper;
+package com.tyza66.seata1.mapper;
 
 import org.apache.ibatis.annotations.Update;
 

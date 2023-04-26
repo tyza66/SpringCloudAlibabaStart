@@ -1,4 +1,4 @@
-package com.tyza66.seata2;
+package com.tyza66.seata1;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
