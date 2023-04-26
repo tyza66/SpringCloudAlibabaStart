@@ -8,8 +8,14 @@ spring:
     gateway:
       routes: #路由规则
         - id: order_route #路由的唯一标识 先路由到订单
-          uri: http://localhost:8083 #需要转发的地址
+          uri: lb://order-service #需要转发的地址 lb就是使用nacos本地负载均衡策略
           predicates:  #断言规则 用于路由规则的匹配
-            - Path=/order-serv/**
-          filters:
-            - StripPrefix=1 #内置过滤器 转发之前去掉第一层路径
+            - Path=/order/**
+            - After=2019-12-31T23:59:59.789+08:00[Asia/Shanghai]
+
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+

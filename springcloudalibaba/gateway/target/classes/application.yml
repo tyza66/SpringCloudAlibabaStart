@@ -6,9 +6,12 @@ spring:
   #gateway配置
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: true #是否启用自动识别nacos服务
+      routes: #路由规则
+        - id: order_route #路由的唯一标识 先路由到订单
+          uri: lb://order-service #需要转发的地址 lb就是使用nacos本地负载均衡策略
+          predicates:  #断言规则 用于路由规则的匹配
+            - Path=/order/**
+            - After=2019-12-31T23:59:59.789+08:00[Asia/Shanghai]
 
     nacos:
       discovery:
