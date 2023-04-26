@@ -1,9 +1,8 @@
-package com.tyza66.seata2;
+package com.tyza66.seata1;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * Author: tyza66
@@ -11,8 +10,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * Github: https://github.com/tyza66
  **/
 @SpringBootApplication
-@MapperScan("com.tyza66.seata1.mapper")
-@EnableFeignClients
+@MapperScan("com.tyza66.seata2.mapper")
 public class SeataApplication {
     public static void main(String[] args) {
         SpringApplication.run(SeataApplication.class,args);

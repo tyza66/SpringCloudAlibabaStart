@@ -1,6 +1,6 @@
-package com.tyza66.seata2.controller;
+package com.tyza66.seata1.controller;
 
-import com.tyza66.seata2.mapper.ControlNum2;
+import com.tyza66.seata1.mapper.ControlNum2;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

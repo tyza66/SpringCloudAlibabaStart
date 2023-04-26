@@ -1,7 +1,7 @@
-package com.tyza66.seata2.controller;
+package com.tyza66.seata1.controller;
 
-import com.tyza66.seata2.feign.FeignT2;
-import com.tyza66.seata2.mapper.ControlNum1;
+import com.tyza66.seata1.feign.FeignT2;
+import com.tyza66.seata1.mapper.ControlNum1;
 import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
