@@ -1,4 +1,4 @@
-package com.tyza66.seata1.entity;
+package com.tyza66.seata2.entity;
 
 /**
  * Author: tyza66

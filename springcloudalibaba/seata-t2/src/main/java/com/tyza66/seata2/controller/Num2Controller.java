@@ -1,4 +1,4 @@
-package com.tyza66.seata1.controller;
+package com.tyza66.seata2.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RestController
 @RequestMapping("/n1")
-public class Num1Controller {
+public class Num2Controller {
 
     @RequestMapping("/go")
     public String go(){

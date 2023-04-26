@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/order-sentinel/order-sentinel.iml" filepath="$PROJECT_DIR$/order-sentinel/order-sentinel.iml" />
       <module fileurl="file://$PROJECT_DIR$/product-nacos/product-nacos.iml" filepath="$PROJECT_DIR$/product-nacos/product-nacos.iml" />
       <module fileurl="file://$PROJECT_DIR$/seata-t1/seata-t1.iml" filepath="$PROJECT_DIR$/seata-t1/seata-t1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seata-t2/seata-t2.iml" filepath="$PROJECT_DIR$/seata-t2/seata-t2.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloudalibaba.iml" filepath="$PROJECT_DIR$/springcloudalibaba.iml" />
       <module fileurl="file://$PROJECT_DIR$/stock/stock.iml" filepath="$PROJECT_DIR$/stock/stock.iml" />
       <module fileurl="file://$PROJECT_DIR$/stock-nacos/stock-nacos.iml" filepath="$PROJECT_DIR$/stock-nacos/stock-nacos.iml" />

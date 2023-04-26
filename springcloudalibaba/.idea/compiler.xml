@@ -13,6 +13,7 @@
         <module name="stock" />
         <module name="order-ribbon" />
         <module name="order-openfeign" />
+        <module name="seata-t2" />
         <module name="stock-nacos" />
         <module name="product-nacos" />
         <module name="order-loadbalancer" />
@@ -32,6 +33,7 @@
       <module name="order-sentinel" target="1.5" />
       <module name="product-nacos" target="1.5" />
       <module name="seata-t1" target="1.5" />
+      <module name="seata-t2" target="1.5" />
       <module name="springcloudalibaba" target="1.5" />
       <module name="stock" target="1.5" />
       <module name="stock-nacos" target="1.5" />
