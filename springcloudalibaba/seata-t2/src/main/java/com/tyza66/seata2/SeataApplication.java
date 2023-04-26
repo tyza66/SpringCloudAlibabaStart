@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Github: https://github.com/tyza66
  **/
 @SpringBootApplication
-@MapperScan("com.tyza66.seata1.mapper")
+@MapperScan("com.tyza66.seata2.mapper")
 public class SeataApplication {
     public static void main(String[] args) {
         SpringApplication.run(SeataApplication.class,args);

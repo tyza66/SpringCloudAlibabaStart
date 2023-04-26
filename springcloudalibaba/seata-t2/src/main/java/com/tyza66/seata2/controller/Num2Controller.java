@@ -1,7 +1,11 @@
 package com.tyza66.seata2.controller;
 
+import com.tyza66.seata2.mapper.ControlNum2;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
 
 /**
  * Author: tyza66
@@ -11,9 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/n1")
 public class Num2Controller {
+    @Resource
+    ControlNum2 controlNum2;
 
     @RequestMapping("/go")
     public String go(){
+        controlNum2.noPass(1);
         return "go";
     }
 }
