@@ -23,13 +23,13 @@ spring:
           #- RedirectTo=302,https://www.baidu.com/
           #- SetStatus=404
       # 跨域配置
-      globalcors:
-        cors-configurations:
-          '[/**]': #允许跨域访问的资源
-            allowedOrigins: "*"                 #跨域的来源
-            allowedMethods:
-              - GET
-              - POST
+      #globalcors:
+        #cors-configurations:
+          #'[/**]': #允许跨域访问的资源
+            #allowedOrigins: "*"                 #跨域的来源
+            #allowedMethods:
+              #- GET
+              #- POST
 
     nacos:
       discovery:

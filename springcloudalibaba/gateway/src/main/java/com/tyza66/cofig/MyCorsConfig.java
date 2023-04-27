@@ -1,4 +1,4 @@
-package com.tyza66;
+package com.tyza66.cofig;
 
 import io.netty.handler.codec.http.cors.CorsConfig;
 import org.springframework.context.annotation.Bean;
@@ -14,7 +14,7 @@ import org.springframework.web.util.pattern.PathPatternParser;
  * Github: https://github.com/tyza66
  **/
 @Configuration
-public class configCORSConfig {
+public class MyCorsConfig {
     @Bean
     public CorsWebFilter corsFilter(){
         CorsConfiguration config = new CorsConfiguration();
