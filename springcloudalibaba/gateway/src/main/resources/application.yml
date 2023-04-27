@@ -39,7 +39,7 @@ spring:
     sentinel:
       transport:
         dashboard: 127.0.0.1:9090
-      scg:
-        fallback:
-          mode: response
-          response-body: "{code:'',message:''}"
+      #scg:
+          #fallback:
+          #mode: response
+        #response-body: "{code:'',message:''}"
