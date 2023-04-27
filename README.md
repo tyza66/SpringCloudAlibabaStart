@@ -17,7 +17,7 @@
 - Step13：Sentinel热点参数流控（order-sentinel）
 - Step13：Sentinel持久化（order-sentinel）
 - Step14：分布式事务Seata（AT模式，二阶段提交协议prepare，commit）（文件存储选择db，配置中心和注册中心选择nacos）（seata-t1，seata-t2）
-- Step15：Gateway网关（各种断言工厂，过滤器工厂）（gateway，order-nacos）
+- Step15：Gateway网关（各种断言工厂，过滤器工厂，全局过滤工厂实现跨域）（gateway，order-nacos）
 - Step16：SkyWalking日志采集
 
 By：tyza66(洮羱芝闇)

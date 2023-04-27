@@ -22,6 +22,13 @@ spring:
             #- PrefixPath=/mall-order  #添加前缀对应微服务需要配置context-path
             #- RedirectTo=302,https://www.baidu.com/
             #- SetStatus=404
+      globalcors:
+        cors-configurations:
+          '[/**]': #允许跨域访问的资源
+            allowedOrigins: "https://docs.spring.io" #跨域的来源
+            allowedMethods:
+              - GET
+              - POST
 
     nacos:
       discovery:
