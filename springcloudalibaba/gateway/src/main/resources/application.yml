@@ -11,21 +11,22 @@ spring:
           uri: lb://order-service #需要转发的地址 lb就是使用nacos本地负载均衡策略
           predicates:  #断言规则 用于路由规则的匹配
             - Path=/order/**
-            - After=2019-12-31T23:59:59.789+08:00[Asia/Shanghai]
+            #- After=2019-12-31T23:59:59.789+08:00[Asia/Shanghai]
             #-Header=X-Request-Id,\d+
             #-Method=GET
             #Query=name,tyza66|tyza77
-            - CheckAuth=tyza66
+            #- CheckAuth=tyza66
           filters:
-            - CheckAuth=tyza66
-            #- AddRequestHeader=X-Request-color,red
-            #- PrefixPath=/mall-order  #添加前缀对应微服务需要配置context-path
-            #- RedirectTo=302,https://www.baidu.com/
-            #- SetStatus=404
+          #- CheckAuth=tyza66
+          #- AddRequestHeader=X-Request-color,red
+          #- PrefixPath=/mall-order  #添加前缀对应微服务需要配置context-path
+          #- RedirectTo=302,https://www.baidu.com/
+          #- SetStatus=404
+      # 跨域配置
       globalcors:
         cors-configurations:
           '[/**]': #允许跨域访问的资源
-            allowedOrigins: "https://docs.spring.io" #跨域的来源
+            allowedOrigins: "*"                 #跨域的来源
             allowedMethods:
               - GET
               - POST
