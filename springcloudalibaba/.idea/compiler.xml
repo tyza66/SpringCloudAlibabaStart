@@ -8,24 +8,24 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="stock-nacos" />
-        <module name="seata-t1" />
+        <module name="order-ribbon" />
         <module name="config-nacos" />
         <module name="order-sentinel" />
-        <module name="stock" />
+        <module name="gateway" />
         <module name="order-openfeign-sentinel" />
         <module name="Order" />
         <module name="order-loadbalancer" />
         <module name="seata-t2" />
-        <module name="order-ribbon" />
-        <module name="gateway" />
         <module name="order-nacos" />
+        <module name="stock" />
+        <module name="seata-t1" />
         <module name="product-nacos" />
         <module name="order-openfeign" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="config-nacos" target="1.5" />
-      <module name="gateway" target="8" />
+      <module name="gateway" target="1.5" />
       <module name="Order" target="1.5" />
       <module name="order-loadbalancer" target="1.5" />
       <module name="order-nacos" target="1.5" />

@@ -28,7 +28,7 @@ public class CheckAuthRoutePredicateFactory extends AbstractRoutePredicateFactor
         return Arrays.asList("name");
     }
 
-    public Predicate<ServerWebExchange> apply(CheckAuthRoutePredicateFactory.Config config) {
+    public Predicate<ServerWebExchange> apply(final CheckAuthRoutePredicateFactory.Config config) {
         return new GatewayPredicate() {
             public boolean test(ServerWebExchange exchange) {
                 if(config.getName().equals("tyza66")){

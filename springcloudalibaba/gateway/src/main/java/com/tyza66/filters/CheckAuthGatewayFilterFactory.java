@@ -28,7 +28,7 @@ public class CheckAuthGatewayFilterFactory extends AbstractGatewayFilterFactory<
         return Arrays.asList("value");
     }
 
-    public GatewayFilter apply(CheckAuthGatewayFilterFactory.Config config) {
+    public GatewayFilter apply(final CheckAuthGatewayFilterFactory.Config config) {
         return new GatewayFilter() {
             @Override
             public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
