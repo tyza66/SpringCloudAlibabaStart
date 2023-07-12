@@ -20,6 +20,7 @@
 - Step15：Gateway网关（各种断言工厂，过滤器工厂，跨域）（gateway，order-nacos，跨域测试用的网页）
 - Step16：Gateway结合Sentinel流控降级（了解代码，使用控制台）
 - Step17：SkyWalking链路追踪
-- 另一种RPC实现方法：https://github.com/tyza66/DubboPlay  
+- 另一种RPC实现方法：https://github.com/tyza66/DubboPlay
+- Seata+Dubbo：https://github.com/tyza66/SeataReview-Dubbo
 
 By：tyza66(洮羱芝闇)
